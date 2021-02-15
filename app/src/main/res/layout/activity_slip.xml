@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SlipActivity">
+
+    <TextView
+        android:id="@+id/adviceAmountTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        android:textSize="72sp"
+        app:layout_constraintBottom_toTopOf="@+id/adviceOddTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retryTextView" />
+
+    <Button
+        android:id="@+id/retrySlipButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/buttonRetrySlip"
+        app:layout_constraintEnd_toStartOf="@+id/growSlipButton"
+        app:layout_constraintStart_toStartOf="@+id/adviceAmountTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/growSlipButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/buttonGrowSlip"
+        app:layout_constraintEnd_toEndOf="@+id/adviceAmountTextView"
+        app:layout_constraintStart_toEndOf="@+id/retrySlipButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/adviceOddTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/adviceAmountTextView"
+        app:layout_constraintStart_toStartOf="@+id/adviceAmountTextView"
+        app:layout_constraintTop_toBottomOf="@+id/adviceAmountTextView" />
+
+    <TextView
+        android:id="@+id/stageAmountTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:textAlignment="textStart"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bonusAmountTextView"
+        app:layout_constraintStart_toStartOf="@+id/adviceOddTextView" />
+
+    <TextView
+        android:id="@+id/bonusAmountTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:textAlignment="textEnd"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/adviceOddTextView"
+        app:layout_constraintStart_toEndOf="@+id/stageAmountTextView" />
+
+    <TextView
+        android:id="@+id/retryTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintEnd_toStartOf="@+id/growTextView"
+        app:layout_constraintStart_toStartOf="@+id/retrySlipButton"
+        app:layout_constraintTop_toBottomOf="@+id/retrySlipButton" />
+
+    <TextView
+        android:id="@+id/growTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/growSlipButton"
+        app:layout_constraintStart_toEndOf="@+id/retryTextView"
+        app:layout_constraintTop_toBottomOf="@+id/growSlipButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

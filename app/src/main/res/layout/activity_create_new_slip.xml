@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNewSlip">
+
+    <EditText
+        android:id="@+id/startAmountInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="@string/inputStartingAmount"
+        android:ems="10"
+        android:hint="@string/inputStartingAmount"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/givenOddInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints="@string/inputGameOdd"
+        android:ems="10"
+        android:hint="@string/inputGameOdd"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/startAmountInput"
+        app:layout_constraintStart_toStartOf="@+id/startAmountInput"
+        app:layout_constraintTop_toBottomOf="@+id/startAmountInput" />
+
+    <EditText
+        android:id="@+id/retriesLimitInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints="@string/inputRetryLimit"
+        android:ems="10"
+        android:hint="@string/inputRetryLimit"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/givenOddInput"
+        app:layout_constraintStart_toStartOf="@+id/givenOddInput"
+        app:layout_constraintTop_toBottomOf="@+id/givenOddInput" />
+
+    <EditText
+        android:id="@+id/oddTargetInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints="@string/inputTargetOdd"
+        android:ems="10"
+        android:hint="@string/inputTargetOdd"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/retriesLimitInput"
+        app:layout_constraintStart_toStartOf="@+id/retriesLimitInput"
+        app:layout_constraintTop_toBottomOf="@+id/retriesLimitInput" />
+
+    <Button
+        android:id="@+id/createNewSlipButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/buttonCreateSlip"
+        app:layout_constraintEnd_toEndOf="@+id/oddTargetInput"
+        app:layout_constraintStart_toStartOf="@+id/oddTargetInput"
+        app:layout_constraintTop_toBottomOf="@+id/oddTargetInput" />
+</androidx.constraintlayout.widget.ConstraintLayout>

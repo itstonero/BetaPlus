@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Beta Plus</string>
+    <string name="buttonViewGames">Games</string>
+    <string name="buttonViewSlip">Slip</string>
+    <string name="buttonCreateSlip">Create Slip</string>
+    <string name="buttonGrowSlip">Grow</string>
+    <string name="buttonRetrySlip">Retry</string>
+
+    <string name="inputStartingAmount">Enter Starting Amount</string>
+    <string name="inputGameOdd">Enter Game Odd</string>
+    <string name="inputRetryLimit">Enter Retry Limit</string>
+    <string name="inputTargetOdd">Enter Target Odd</string>
+</resources>
